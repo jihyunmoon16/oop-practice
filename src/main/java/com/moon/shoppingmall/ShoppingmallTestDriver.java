@@ -1,5 +1,10 @@
 package com.moon.shoppingmall;
 
+import com.moon.shoppingmall.customers.Customer;
+import com.moon.shoppingmall.item.Cart;
+import com.moon.shoppingmall.item.Item;
+import com.moon.shoppingmall.money.Money;
+
 /**
  * @author 문지현
  * @version 1.0

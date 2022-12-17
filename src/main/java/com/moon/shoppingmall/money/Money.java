@@ -1,4 +1,4 @@
-package com.moon.shoppingmall;
+package com.moon.shoppingmall.money;
 
 /*
  * @author 문지현
