@@ -12,3 +12,6 @@ Week 2 : 주문, 할인 정책, 할인 조건 추가
 Week 3 : uml 다이어그램 변경 및 주문, 할인 정책, 할인 조건 구현
 ![image](https://user-images.githubusercontent.com/87014797/208234255-ee92229d-89e1-40b3-a850-ba5eec832914.png)
 - 주문 생성 책임을 장바구니로 이동 
+
+Week 4 : 테스트 코드 추가
+- 정책 및 조건에 대한 테스트 코드 작성
