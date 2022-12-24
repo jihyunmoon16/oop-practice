@@ -15,12 +15,11 @@ public class Customer {
 
     private MembershipLevel level;
 
-    public Customer() {};
-
-    public Customer(Integer id, String name, String address) {
+    public Customer(Integer id, String name, String address, MembershipLevel level) {
         this.id = id;
         this.name = name;
         this.address = address;
+        this.level = level;
     }
 
     // getters
@@ -53,7 +52,12 @@ public class Customer {
     }
 
     // 고객이 무료배송에 해당하면 true를 반환
-    public boolean isEligibleForFreeShipping() {
-        return level != SILVER;
+//    public boolean isEligibleForFreeShipping() {
+//        return level != SILVER;
+//    }
+
+    // 등급이 같은지 혹은 더 높은지 확인
+    public boolean isMembershipLevelSameOrHigher(MembershipLevel memLv) {
+        return this.level.compare(this.level, memLv) >= 0;
     }
 }

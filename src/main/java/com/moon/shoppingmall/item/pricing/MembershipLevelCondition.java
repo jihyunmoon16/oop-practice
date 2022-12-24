@@ -16,5 +16,5 @@ public class MembershipLevelCondition implements DiscountCondition {
     public MembershipLevelCondition(MembershipLevel membershipLevel) { this.membershipLevel = membershipLevel;}
 
     @Override
-    public boolean isSatisfiedBy(Cart cart) { return cart.isEligibleForFreeShipping(); }
+    public boolean isSatisfiedBy(Cart cart) { return cart.isMembershipLevelSatisfiedBy(membershipLevel); }
 }
