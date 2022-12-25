@@ -17,8 +17,8 @@ public class TotalAmountCondition implements DiscountCondition {
     }
 
     // 장바구니의 총 합이 입력금액이 보다 클경우 true 반환. 즉 입력금액이 장바구니 총 합보다 작아야함.
-    // isLessThan 사용해야함
     public boolean isSatisfiedBy(Cart cart) {
-        return amount.isLessThanOrEqual(cart.calculateTotalCostOfItemsInCart());
+        // return amount.isLessThanOrEqual(cart.calculateTotalCostOfItemsInCart());
+        return cart.calculateTotalCostOfItemsInCart().isGreaterThanOrEqual(amount);
     }
 }
